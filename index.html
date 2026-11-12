@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>수련장</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div id="hud-title">수련장</div>
+    <div id="hp-row">
+      <div id="hp-fill"></div>
+      <span id="hp-text">HP 100 / 100</span>
+    </div>
+    <div id="stat-line"></div>
+    <div id="gear-line"></div>
+    <div id="skill-row"></div>
+    <p id="hint">이동 WASD · 공격 Space · 인벤토리 E · 제작 C · 스킬 J K L</p>
+    <div id="menu-row">
+      <button type="button" id="inv-button">인벤토리</button>
+      <button type="button" id="craft-button">제작</button>
+    </div>
+  </div>
+
+  <div id="toast-wrap"></div>
+  <section id="inventory" class="panel hidden" aria-label="인벤토리"></section>
+  <section id="craft" class="panel hidden" aria-label="제작"></section>
+  <div id="debug-bar" class="hidden"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
